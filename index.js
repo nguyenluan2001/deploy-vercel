@@ -18,6 +18,7 @@ app.get("/users",(req,res)=>{
             username:3
         }
     ]
+    res.json(user)
 })
 const port = process.env.PORT || 5000
 app.listen(port)
