@@ -4,7 +4,7 @@ app.get("/",(req,res)=>{
     res.send("hello world")
 })
 app.get("/users",(req,res)=>{
-    let uses=[
+    let users=[
         {
             "id":1,
             "username":"user 1"
@@ -18,7 +18,7 @@ app.get("/users",(req,res)=>{
             username:3
         }
     ]
-    res.json(user)
+    res.json(users)
 })
 const port = process.env.PORT || 5000
 app.listen(port)
